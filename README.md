@@ -19,8 +19,6 @@ A player wins the game if they have a row or column on their board with all of t
 
 **🏁 Your Challenge: Find the first winning board, then calculate its score.**
 
-Write a script that finds the first winning board. Once you have the board, calculate and return its score so that we can check if it's correct.
-
 To calculate the score of a board, start by finding the sum of all unmarked numbers on that board. Then, multiply that sum by the number that was just called when the board won. Return this number.
 
 ## The Project Setup
