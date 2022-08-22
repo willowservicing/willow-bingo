@@ -33,8 +33,8 @@ _Things to note:_
 
 ## Running it
 
-`npm start` runs the bingo file (`bingo.ts`)
-`npm test` runs the test file (`bingo.test.ts`) to find out if your answer is correct.
+* `npm start` runs the bingo file (`bingo.ts`)
+* `npm test` runs the test file (`bingo.test.ts`) to find out if your answer is correct.
 
 
 Let's play!
