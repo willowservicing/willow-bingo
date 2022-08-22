@@ -15,16 +15,18 @@ The host draws numbers at random, one at a time. When a number is drawn, players
 
 A player wins the game if they have a row or column on their board with all of the numbers marked (no diagonals).
 
-## Your Challenge: Find the first winning board, then calculate its score.
+[Bingo.txt](/bingo.txt) contains 99 random bingo boards, along with a random order of numbers that our bingo host has drawn.
 
-Write a script in `bingo.ts` that finds the first winning board. Once you have the board, calculate and return its score so that we can check if it's correct.
+**🏁 Your Challenge: Find the first winning board, then calculate its score.**
+
+Write a script that finds the first winning board. Once you have the board, calculate and return its score so that we can check if it's correct.
 
 To calculate the score of a board, start by finding the sum of all unmarked numbers on that board. Then, multiply that sum by the number that was just called when the board won. Return this number.
 
 ## The Project Setup
 
-* `bingo.txt` contains 99 random bingo boards, along with a random order of numbers that our bingo host has drawn. You can work with this data however you like.
-* `bingo.ts` is where you will write your script to find the first winning bingo board. This file returns function (`bingo()`) that should output the final score.
+* `bingo.ts` is where you will write your script to find the first winning bingo board. This file returns a function, `bingo()`, that should output the final score.
+* `bingo.txt` contains the bingo boards and numbers
 * `bingo.test.ts` is where we'll check the return value of `bingo()` to see if it's correct.
 
 _Things to note:_
