@@ -1,4 +1,4 @@
-# Let's play bingo!
+# Let's Play Bingo!
 
 Bingo is a game played on boards each with a 5x5 grid of numbers. Each number on the board is randomly arranged with the possibilities of numbers 1 – 99.
 
@@ -21,7 +21,7 @@ A player wins the game if they have a row or column on their board with all of t
 
 To calculate the score of a board, start by finding the sum of all unmarked numbers on that board. Then, multiply that sum by the number that was just called when the board won. This is the final score.
 
-## The Project Setup
+## The Project
 
 * `bingo.ts` is where you will write your script to find the first winning bingo board. This file exports a function, `bingo()`, that should return the final score.
 * `bingo.txt` contains the bingo boards and numbers
