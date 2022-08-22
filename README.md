@@ -19,11 +19,11 @@ A player wins the game if they have a row or column on their board with all of t
 
 **🏁 Your Challenge: Find the first winning board, then calculate its score.**
 
-To calculate the score of a board, start by finding the sum of all unmarked numbers on that board. Then, multiply that sum by the number that was just called when the board won. Return this number.
+To calculate the score of a board, start by finding the sum of all unmarked numbers on that board. Then, multiply that sum by the number that was just called when the board won. This is the final score.
 
 ## The Project Setup
 
-* `bingo.ts` is where you will write your script to find the first winning bingo board. This file returns a function, `bingo()`, that should output the final score.
+* `bingo.ts` is where you will write your script to find the first winning bingo board. This file exports a function, `bingo()`, that should return the final score.
 * `bingo.txt` contains the bingo boards and numbers
 * `bingo.test.ts` is where we'll check the return value of `bingo()` to see if it's correct.
 
