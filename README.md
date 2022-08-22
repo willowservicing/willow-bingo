@@ -32,7 +32,9 @@ _Things to note:_
 * The project supports Typescript but you can use Javascript if you would like.
 
 ## Running it
+First clone the project and install the dependencies with `npm install`. 
 
+Then you can run the project with these commands:
 * `npm start` runs the bingo file (`bingo.ts`)
 * `npm test` runs the test file (`bingo.test.ts`) to find out if your answer is correct.
 
