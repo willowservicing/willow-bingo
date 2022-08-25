@@ -26,12 +26,12 @@ To calculate the score of a board, start by finding the sum of all unmarked numb
 ## The Project
 
 - `bingo.ts` is where you will write your script to find the first winning bingo board. This file exports a function, `bingo()`, that should return the final score.
-- `bingo.txt` contains the bingo boards and numbers
+- `bingo-data.ts` contains the bingo boards and numbers
 - `bingo.test.ts` is where we'll check the return value of `bingo()` to see if it's correct (currently set up for challenge 2).
 
 _Things to note:_
 
-- You may intake and format the bingo cards and numbers however you like, using whatever method you prefer. For example, you can hand-format the data into constants and paste them into the bingo file, or if you prefer to work with the file directly, we've included `fs` in the project.
+- You can reformat the bingo data however you want.
 - The project supports Typescript but you can use Javascript if you would like.
 
 ## Running it
