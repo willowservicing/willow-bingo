@@ -1,6 +1,6 @@
 # Let's Play Bingo!
 
-Bingo is a game played on boards, each with a 5x5 grid of numbers. Each number on the board is randomly arranged with the possibilities of numbers 1 – 99.
+Bingo is a game played on boards, each with a 5x5 grid of numbers. Each number on the board is randomly arranged with the possibilities of numbers 0 – 99.
 
 For example, a board may look like this:
 
