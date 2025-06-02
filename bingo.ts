@@ -22,14 +22,27 @@ export const unroll_cards = (cards: number[][][]): number[][] => {
 };
 
 export const check_winner = (card: number[]): boolean => {
-  const positions = [0, 5, 10, 15, 20];
+  const columns = [0, 5, 10, 15, 20];
   for (let i = 1; i <= 5; i++) {
     if (
-      card[i * positions[0]] === -1 &&
-      card[i * positions[1]] === -1 &&
-      card[i * positions[2]] === -1 &&
-      card[i * positions[3]] === -1 &&
-      card[i * positions[4]] === -1
+      card[i * columns[0]] === -1 &&
+      card[i * columns[1]] === -1 &&
+      card[i * columns[2]] === -1 &&
+      card[i * columns[3]] === -1 &&
+      card[i * columns[4]] === -1
+    ) {
+      return true;
+    }
+  }
+
+  const rows = [0, 1, 2, 3, 4];
+  for (let i = 1; i <= 5; i++) {
+    if (
+      card[i * rows[0]] === -1 &&
+      card[i * rows[1]] === -1 &&
+      card[i * rows[2]] === -1 &&
+      card[i * rows[3]] === -1 &&
+      card[i * rows[4]] === -1
     ) {
       return true;
     }
@@ -80,13 +93,14 @@ export const call_numbers = (
 export const bingo = (): number | void => {
   console.log("Let's play bingo!");
   //unroll_cards(cards);
+  // unroll_card(cards[0]);
   const winner = call_numbers(numbers, cards);
   if (winner) {
     let score = calculate_score(winner[0], winner[1]);
-    console.log(`Winning number: ${score}`);
-    console.log(typeof score);
-    return score;
+    console.log(`Winning number: ${winner[1]} Winning score: ${score}`);
+    console.log(Math.floor(score));
+    return Math.floor(score);
   }
 };
 
-bingo();
+// bingo();
